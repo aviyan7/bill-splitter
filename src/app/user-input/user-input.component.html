@@ -1,0 +1,10 @@
+<div class="user-input-container">
+    <h5 class="mb-3">Users</h5>
+    <div class="input-group">
+      <input type="text" [(ngModel)]="username" class="form-control" placeholder="Enter Name" autocomplete="name" />
+      <button (click)="addUser ()" class="btn btn-primary">Add Name</button>
+    </div>
+    <div id="name-container" class="border rounded p-3 mt-3" style="min-height: 100px;">
+      <div *ngFor="let user of users" class="badge bg-primary text-white m-1">{{ user }}</div>
+    </div>
+  </div>

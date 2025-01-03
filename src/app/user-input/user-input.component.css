@@ -1,0 +1,13 @@
+.user-input-container {
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.name-item {
+    display: inline-flex;
+    align-items: center;
+    margin: 0.5rem;
+}

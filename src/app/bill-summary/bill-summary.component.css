@@ -1,0 +1,11 @@
+.table {
+    margin-top: 1rem;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.badge {
+    margin: 0.2rem;
+}

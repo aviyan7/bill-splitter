@@ -1,0 +1,14 @@
+<div class="item-input-container">
+    <h5 class="mb-3">Items to Split</h5>
+    <div class="input-group">
+      <input type="text" [(ngModel)]="itemName" class="form-control" placeholder="Item Name" autocomplete="off" />
+      <input type="number" [(ngModel)]="itemQuantity" class="form-control" placeholder="Quantity" autocomplete="off" />
+      <input type="number" [(ngModel)]="itemPrice" class="form-control" placeholder="Price" autocomplete="off" />
+      <button (click)="addItem()" class="btn btn-primary">Add Item</button>
+    </div>
+    <div id="item-container" class="border rounded p-3 mt-3" style="min-height: 200px;">
+      <div *ngFor="let item of items" class="item mb-3">
+        <strong>{{ item.name }}</strong> - Quantity: {{ item.quantity }} - Price: Rs. {{ item.price }}
+      </div>
+    </div>
+  </div>
